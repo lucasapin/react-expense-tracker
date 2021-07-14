@@ -11,7 +11,6 @@ function App() {
 
   return (
     <div>
-      <h2>LET'S GET STARTED</h2>
       <ExpenseItemList expenses={expenses} />
     </div>
   );
