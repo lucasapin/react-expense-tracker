@@ -11,9 +11,13 @@ function App() {
     { title: "New Desk (Wooden)", amount: 742.22, date: new Date(2021, 7, 12) },
   ];
 
+  const addExpenseHandler = (expense) => {
+    console.log('Printed in App.js')
+    console.log(expense);
+  }
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <ExpenseItemList expenses={expenses} />
     </div>
   );
