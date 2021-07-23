@@ -10,11 +10,11 @@ const dummy_expenses = [
   { title: "New Desk (Wooden)", amount: 742.22, date: new Date(2021, 7, 12) },
 ];
 function App() {
-  const [expenses, setExpenses] = useState(dummy_expenses)
+  const [expenses, setExpenses] = useState(dummy_expenses);
 
   const addExpenseHandler = (expense) => {
     setExpenses((prevExpenses) => {
-      return [expenses, ...prevExpenses];
+      return [expense, ...prevExpenses];
     })
   }
   return (
