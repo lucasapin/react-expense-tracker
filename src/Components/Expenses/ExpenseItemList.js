@@ -18,7 +18,6 @@ function ExpenseItemList(props) {
   return (
     <Card className="expenses">
       <ExpensesFilter selected={filteredYear} onFilterChange={changeYearHandler} />
-      {/* {expensesContent} */}
       <ExpenseList items={filteredExpenses} />
     </Card>
   );
